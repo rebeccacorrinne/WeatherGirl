@@ -1,27 +1,45 @@
 body {
-    background-color: lavenderblush;
+background: radial-gradient(circle, #FFEAEA 0%, #FFDCDC 100%);
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
-.logo1{
-      font-family: "Montserrat Alternates", sans-serif;
+.logo{
+font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
   font-style: normal;
+
 }
 .logo2{
       font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
   font-style: italic;
+  
 }
 
 .weather-app{
 background: rgba(249, 249, 242, 0.883);
-max-width: 400px;
+max-width: 600px;
 margin: 30px auto;
 padding: 40px;
 border-radius: 12px;
-box-shadow: 0 30px 50px rgba(65,50,100,0.08);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08),      /* Subtle grey shadow */
+    0 40px 100px 30px rgba(255, 160, 122, 0.25); /* Large soft glow */
+}
 
+.search-form-input{
+    width: 80%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 0.2px solid #523c3c;
+    border-radius: 6px;
+    background-color: #e1a7e3);
+}
+
+.search-button{
+    background-color: rgb(197, 168, 156) ;
+    border: none;
+    padding: 13px 18px;
+    border-radius: 6px;
 }
