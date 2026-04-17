@@ -1,0 +1,27 @@
+body {
+    background-color: lavenderblush;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.logo1{
+      font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.logo2{
+      font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.weather-app{
+background: rgba(249, 249, 242, 0.883);
+max-width: 400px;
+margin: 30px auto;
+padding: 40px;
+border-radius: 12px;
+box-shadow: 0 30px 50px rgba(65,50,100,0.08);
+
+}
