@@ -5,6 +5,14 @@ background: radial-gradient(circle, #FFEAEA 0%, #FFDCDC 100%);
   font-style: normal;
 }
 
+
+
+h1 {
+    color: #3C2B20;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
 .logo{
 font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
@@ -18,28 +26,55 @@ font-family: "Montserrat Alternates", sans-serif;
   
 }
 
+header{
+    border-bottom: #FFDCDC 1px solid;
+    padding: 0 0 15px 0;
+}
+
 .weather-app{
-background: rgba(249, 249, 242, 0.883);
-max-width: 600px;
-margin: 30px auto;
-padding: 40px;
-border-radius: 12px;
-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08),      /* Subtle grey shadow */
-    0 40px 100px 30px rgba(255, 160, 122, 0.25); /* Large soft glow */
+background-color: #FDFBF7;
+    padding: 18px 45px;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: 45px auto;
+    border-radius: 12px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08),     
+    0 40px 100px 30px rgba(255, 160, 122, 0.25); 
 }
 
 .search-form-input{
     width: 80%;
     padding: 12px 20px;
     margin-bottom: 20px;
-    border: 0.2px solid #523c3c;
+    border: 0.2px solid #C7938B;
     border-radius: 6px;
-    background-color: #e1a7e3);
+    background-color: #ffefee6d;
 }
 
 .search-button{
-    background-color: rgb(197, 168, 156) ;
-    border: none;
-    padding: 13px 18px;
-    border-radius: 6px;
+  background-color: #C7938B;
+  color: #FFFFFF; 
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px; 
+  cursor: pointer;
+  font-family: "montserrat alternates", sans-serif; 
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #B57F77; /* A slightly darker shade for the hover effect */
+}
+
+a{
+    color: #8b6a64;
+    text-decoration: underline;
+}
+
+footer{
+       border-top: #FFDCDC 1px solid;
+    padding: 20px 0 0 0;
+    text-align: center;
+    font-size: 12px;
+    color: #C7938B;
 }
