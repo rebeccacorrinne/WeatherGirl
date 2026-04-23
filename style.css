@@ -6,11 +6,10 @@ background: radial-gradient(circle, #FFEAEA 0%, #FFDCDC 100%);
 }
 
 
-
 h1 {
     color: #3C2B20;
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 0;
   }
 
 .logo{
@@ -20,7 +19,7 @@ font-family: "Montserrat Alternates", sans-serif;
 
 }
 .logo2{
-      font-family: "Montserrat Alternates", sans-serif;
+font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
   font-style: italic;
   
@@ -28,18 +27,62 @@ font-family: "Montserrat Alternates", sans-serif;
 
 header{
     border-bottom: #FFDCDC 1px solid;
-    padding: 0 0 15px 0;
 }
 
 .weather-app{
 background-color: #FDFBF7;
-    padding: 18px 45px;
+    padding: 18px 18px;
     border-radius: 20px;
     max-width: 500px;
     margin: 45px auto;
     border-radius: 12px;
 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08),     
     0 40px 100px 30px rgba(255, 160, 122, 0.25); 
+}
+.weather-app-data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.city-name{
+    color: #1d150f;
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.weather-app-details
+{
+    color: #3C2B20;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.weather-app-details strong{
+    color: #c33d53;
+    font-weight: 600;
+}
+
+.weather-app-temp-container{
+    display: flex;
+    align-items: center;
+}
+
+.weather-icon{
+font-size: 28px;
+margin-bottom: 10px;
+}
+
+.weather-temp{
+    font-size: 70px;
+    color: #201812;
+    margin-left: 10px;
+}
+
+.weather-app-unit{
+    margin-bottom: 18px;
+    font-size: 28px;
 }
 
 .search-form-input{
@@ -62,8 +105,13 @@ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08),
   transition: background-color 0.3s ease;
 }
 
+main{
+    padding: 30px;
+}
+
+
 .search-button:hover {
-  background-color: #B57F77; /* A slightly darker shade for the hover effect */
+  background-color: #B57F77; 
 }
 
 a{
@@ -75,6 +123,7 @@ footer{
        border-top: #FFDCDC 1px solid;
     padding: 20px 0 0 0;
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     color: #C7938B;
+    font-family:'Lucida Sans',Geneva, Verdana, sans-serif
 }
