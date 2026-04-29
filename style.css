@@ -30,9 +30,9 @@ header{
 
 .weather-app{
 background-color: #FDFBF7;
-    padding: 18px 18px;
+    padding: 24px 24px;
     border-radius: 20px;
-    max-width: 500px;
+    max-width: 630px;
     margin: 45px auto;
     border-radius: 12px;
 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08),     
@@ -102,7 +102,7 @@ margin-bottom: 10px;
 .weather-forecast {
     display: flex;
     justify-content: space-around;
-    margin-top: 28px;
+    margin-top: 40px;
     width: 100%;
 }
 .weather-forecast-date {
