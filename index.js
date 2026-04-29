@@ -6,6 +6,7 @@ let humidityElement = document.querySelector("#humidity");
 let windSpeedElement = document.querySelector("#wind-speed");
 let timeElement = document.querySelector("#time");
 let date = new Date(response.data.time * 1000);
+let iconElement = document.querySelector("#icon");
 
     let temperature = response.data.temperature.current;
     let city = response.data.city;
@@ -16,6 +17,9 @@ descriptionElement.innerHTML = response.data.condition.description;
 humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
 windSpeedElement.innerHTML = `${response.data.wind.speed}km/hr`;
 temperatureElement.innerHTML = Math.round(temperature);  
+iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon" />`;
+
+getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -43,10 +47,16 @@ function handleSearchSubmit(event) {
     event.preventDefault();
     let searchInput = document.querySelector(".search-form-input");
     searchCity(searchInput.value);
-
 }
 
-function displayForecast() {
+function getForecast(city) {
+    let apiKey = "5aebaf322a84ft22eb0f046oe39fc614";
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+console.log(response.data);
 
 let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
 let forecastHtml = "";
@@ -55,18 +65,20 @@ let forecastHtml = "";
 days.forEach(function (day) {
 forecastHtml = 
 forecastHtml + `
-        <div class="weather-forecast-day">
-             <div class="weather-forecast-date">${day}</div>
-             <div class="weather-forecast-icon">🌧️</div>
-             <div class="weather-forecast-temps">
-                     <div class="weather-forecast-temp">19°</div>
-                    <div class="weather-forecast-temp">4°</div>
+<div class="weather-forecast-day">
+    <div class="weather-forecast-date">${day}</div>
+             <div class="weather-forecast-icon">
+        <img src="${day.condition.icon_url}" class="forecast-icon" /> 
+            </div>
+        <div class="weather-forecast-temps">
+        <div class="weather-forecast-temp">19°</div>
+        <div class="weather-forecast-temp">4°</div>
          </div>
     </div>
 </div>
     `;
     });
-
+``
 let forecastElement = document.querySelector("#forecast");
 forecastElement.innerHTML = forecastHtml;
 }
